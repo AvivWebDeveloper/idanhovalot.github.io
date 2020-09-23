@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+ 
+html {
+    scroll-behavior: smooth;
+    transition: 5s alls;
+}
+*
+* {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+html {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0px;
+    background-color: #fff;
+    font-size: 18px;
+    color: #2f3640;
+    overflow-x: hidden;
+    font-family: 'Assistant', sans-serif;
+}
+.content{
+   padding-right: 0;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.paragraph {
+    margin-left: 500px;
+    font-size: 21px;
+    text-align: right;
+    margin-top: -15px;
+ } 
+
+.content {
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width:930px) {
+  .content {
+      width: 95%;
+  }
+}
+
+@media screen and (max-width:560px) {
+    .content {
+        width: 100%;
+        padding: 0 20px;
+    }
+  }
+
+header {
+    width: 100%;
+    height: 680px;
+    margin: 0px;
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('images/Boxes-background.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    background-color:#fff;
+    width: 100%;
+    margin-top: -20px; 
+    height: 75px; 
+    opacity: 0.91; 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+}
+
+.nav-bar li {
+    padding-top: 9px;
+    display: inline-block;
+    margin: 0 20px;
+    list-style: none;
+    font-weight: 500;
+    padding-left: 80px;
+    font-size: 22px;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: black;
+    transition: color .3s ease;
+    transition-property: color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.nav-bar li:hover,
+.nav-bar li:hover .fa-facebook-official,
+.nav-bar li:hover .fa-whatsapp,
+.nav-bar li:hover .fa-phone {
+    color: #c23616;
+    transition: 0.3s;
+}
+
+  .contact-button {
+    font-size: 25.7px;
+    color: white;
+    height: 52px;
+    width: 150px;
+    background-color: #f03a0c;
+    border: none;
+    border-radius: 50px;
+}
+
+.contact-button:hover {
+    background-color: #e44017;
+}
+
+.hero {
+    margin-bottom: 10px;
+    font-size: 90px;
+    margin-top: -120px;
+    color: #000000;
+}
+
+button {
+    border: none;
+    font-size: 18px;
+    background-color: #e84118;
+    font-family: 'Assistant', sans-serif;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 50px;
+    width: 160px;
+    height: 50px;
+}
+
+.illustration-info {
+    margin-right: 570px;
+    margin-top: -340px;
+    width: 140%;
+    height: 140%;
+}
+
+.telephone {
+    color: #e84118;
+    font-weight: bold;
+    display: inline-block;
+}
+
+@media screen and (max-width: 560px) {
+
+
+    header {
+        height: -200px;
+        background-attachment: scroll;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .nav-bar  {
+        width: 100%;
+        height: 50px;
+    }
+
+    .nav-bar ul {
+        padding: 0;
+    }
+
+    .nav-bar li {
+        display: block;
+        height: 30px;
+    }
+
+    .hero {
+        font-size: 42px;
+        margin: 0 auto 20px;
+    }
+
+    .paragraph {
+      font-size: 18px;
+      text-align: right;
+      width: 100%;
+    }
+
+    .illustration-info {
+        display: inline-block;
+        width: 150px;
+        height: 100px;
+    }
+}
+
+form{
+    line-height: 1em;
+    border-radius: 5px;
+}
+
+input{   
+    border: 0px solid;
+    outline: none;
+}
+
+.feature-box {
+    position: relative;
+    width: calc(100vw / 5);
+    height: calc(100vw / 5);
+    overflow: hidden;
+    float: right;
+}
+
+.feature-box img {
+    width: 97%;
+    height: 100%;
+    object-fit: cover;
+    transition: 1.5s;
+}
+
+.feature-box:hover img {
+    transform: scale(1.18);
+}
+ 
+
+@media screen and (max-width: 460px) {
+  .feature-description {
+      font-size: 16px;
+      opacity: 0%;
+  }
+
+  .feature-box {
+    width: 100%;
+    height: 200px;
+  }
+
+  .telephone {
+    font-size: 19px;
+    display: inline-block;
+   }
+
+
+}
+ 
+
+.hero-1 {
+  margin-top: 350px;
+}
+
+#as {
+    width: 80%;
+    max-width: 1000px;
+}
+
+  /* Slideshow container */
+
+  .slideshow-container {
+    max-width: 600px;
+    border: 1px solid grey;
+    position: relative;
+    margin: auto;
+    margin-top: 10px;
+  }
+    
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: -7%;
+    margin-top: -22px;
+    padding: 16px;
+    color: grey;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 100%;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+      color: black;
+  }
+  
+  .numbertext {
+    color: black;
+    font-size: 17px;
+    padding: 445px 270px;
+    position: absolute;
+    top: 0;
+  }
+    
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+ /* Contact Form */
+
+  #contact {
+    font-size: 40px;
+    color: #000000;
+    font-weight: bold;
+    margin-left: 865px;
+}
+
+.contact-header {
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 942px;
+    margin-top: -10px;
+}
+
+.td-input {
+    position: relative;
+}
+
+.td-input label {
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+.td-input input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    height: 20px;
+    
+}
+ 
+
+form input,
+form textarea {
+  display: block;
+  width: 500px;
+  padding: 20px;
+  outline: none;
+  background: none;
+  border-bottom: 1px solid black;
+  margin: 20px 0;
+  outline: none;
+  font-size: 1.2rem;
+  position: relative;
+  border-top: none;
+  border-left-style: none;
+  border-right-style: none;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  align-items: right;
+  margin-left: -500px;
+  height: 20px;
+  margin-top: 4px;
+  color: black;
+  resize: none;
+  text-align: right;
+  font-family: 'Assistant', sans-serif
+}
+
+input:focus,
+textarea:focus {   
+    border-bottom: 1px #e84118 solid;
+    outline: none;
+    transition: 0.4s;
+}
+
+input:hover,
+textarea:hover {
+    border-bottom: 1px #e84118 solid;
+}
+
+
+.submit {
+    height: 40px;
+    width: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 700px;
+  }
+
+.submit:hover {
+    background-color: #e84118;
+    color: rgb(248, 248, 248);
+}
+  
+  .contact-form {
+      margin-top: 20px;
+      text-align:  center;
+      border-top: 100px;
+  }
+  
+  
+@media screen and (max-width: 460px) {
+form input,
+form textarea {
+   width: 250px;
+   margin-left: -600px;
+}
+}
+
+.submit {
+    margin-top: 0px;
+}
+
+.hit{
+   margin-bottom:0px;
+}
+
+.services { 
+    text-align: center;
+    font-size: 36px;
+}
+    
+
+  .border-about {
+    width: 45px;
+    height: 3px;
+    border-radius: 50px;
+    background: #e84118;
+    margin: 40px auto;
+    margin-left: 1000px;
+    margin-top: -20px;
+  }
+
+  .border-services {
+    width: 100px;
+    height: 3px;
+    margin-right: 790px;
+    background-color: #e84118;
+    border-radius: 3px;
+    margin-top: -27px;
+  }
+
+  .border-images {
+    width: 100px;
+    height: 3px;
+    margin-right: 790px;
+    background-color: #e84118;
+    border-radius: 3px;
+    margin-top: -15px;
+  }
+
+
+  .border-clients {
+    width: 120px;
+    height: 3px;
+    margin-right: 790px;
+    background-color: #e84118;
+    border-radius: 50px;
+    margin-top: -9px;
+  }
+
+
+  .border-contact {
+    width: 50px;
+    height: 3px;
+    margin-right: 260px;
+    background-color: #e84118;
+    border-radius: 50px;
+    margin-top: -8px;
+  }
+
+  
+ .content-icons{
+    width: 100%;
+    min-height: 760px;
+    align-items: center;
+    margin-bottom: -150px;
+    background:linear-gradient(rgb(70, 70, 70), rgba(255,255,255,0.6)), url(images/hire-professional-mover.jpg);
+    background-attachment: fixed;
+    background-position: 38% 25%;
+ }
+
+ .header-content{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+ }
+ 
+ .main-content{
+     width: 100%;
+     align-items: flex-start;
+     display: flex;
+ }
+ .main-content > img {
+     margin-top: 1em;
+    }
+
+.illustration-services {
+    height: 450px;
+    
+}
+
+.icons-content{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-right: 250px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+    margin-top: -2px;
+}
+
+.icons-content > div{
+    background-color: white;
+    padding: 20px 0;
+   text-align: center;
+   width: 302px;
+   height: 200px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 50px;
+    background-color: white;
+    width: 650%;
+    height: 500%;
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.icon-label {
+    text-align: center;
+  }
+
+
+.caption {
+    display: block;
+    font-size: 26px;
+    color: #e84118;
+    font-weight: 600;
+}
+
+.feature-box-content{
+    margin-top: 100px;
+    width: 100%;
+}
+
+  .services-button {
+      margin-right: 790px;
+      margin-bottom: 130px;
+      height: 40px;
+      width: 120px;
+      font-size: 20px;
+  }
+
+
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #3d3d3d;
+    color: black;
+    border-top: 1px solid #f0f2f4;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+footer li a {
+   color: #fff;
+   transition: color .3s ease;
+   transition-property: color;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+   transition-delay: 0s;
+}
+
+footer li a:hover {
+    color: #e84118;
+    transition: .3s;
+}
+
+footer p{
+    color: #999;
+}
+
+.my-phone {
+   color: white;
+   transition: color .3s ease;
+   transition-property: color;
+   transition-duration: 0.6s;
+   transition-timing-function: ease;
+   transition-delay: 0s;
+}
+   
+.my-phone:hover {
+    color: #e84118;
+ }
+
